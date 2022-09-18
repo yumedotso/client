@@ -10,10 +10,18 @@ export interface AvatarProps {
 }
 
 const sizes = {
-  small: 40,
+  small: 35,
   medium: 48,
   large: 64
 };
+
+export const NthAvatar = ({ alt }: { src: string; alt?: string }) => (
+  <div className={styles["avatar"]}>
+    <div>
+      <p>{`+${alt}`}</p>
+    </div>
+  </div>
+);
 
 export const Avatar = ({ src, alt = "", size = "medium" }: AvatarProps) => {
   const pxSize = sizes[size];

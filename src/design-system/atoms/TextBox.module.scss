@@ -1,0 +1,31 @@
+@use "../settings/spacing";
+@use "../settings/colors";
+@use "../settings/typography";
+
+.textbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &--large {
+    font: typography.$b400-bold;
+  }
+
+  &--medium {
+    font: typography.$b400-regular;
+  }
+
+  &--small {
+    font: typography.$b300-regular;
+  }
+
+  span {
+    // auto resize input with text length
+    width: auto;
+    border: none;
+    margin-right: spacing.$xxs;
+    background: transparent;
+    outline: none;
+  }
+}

@@ -41,8 +41,6 @@ export const IconButton: Overload = ({
   children,
   ...props
 }) => {
-  const iconSize = size === "large" ? "large" : "medium";
-
   const componentProps = {
     className: classNames(
       styles["icon-btn"],

@@ -1,8 +1,11 @@
 @use "../tools/typography";
+@use "../settings/colors";
 
 .avatar {
   position: relative;
   display: inline-block;
   overflow: hidden;
   border-radius: 50%;
+  background-color: colors.$white;
+  border: 1px solid colors.$bg-darkTheme;
 }
