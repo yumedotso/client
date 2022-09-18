@@ -22,6 +22,14 @@
     padding: spacing.$xxs spacing.$sm;
   }
 
+  &--simple {
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
   &[type="number"] {
     appearance: textfield;
 

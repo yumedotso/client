@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { LegacyRef, useEffect, useState } from "react";
 
 import { classNames } from "../shared/classNames";
 
@@ -7,14 +7,23 @@ import { Label } from "./Label";
 import styles from "./Input.module.scss";
 
 interface BaseInputProps {
+  /**
+   * The id of the input
+   */
   id: string;
+  /**
+   * The label of the input
+   */
   label: string;
   hideLabel?: boolean;
   placeholder?: string;
   value?: string | number;
-  size?: "small" | "medium";
+  size?: "small" | "medium" | "simple";
   required?: boolean;
+  ref?: React.RefObject<HTMLInputElement>;
   onChange?: (ev: React.ChangeEvent<HTMLInputElement>) => void;
+  onFocus?: (ev: React.FocusEvent<HTMLInputElement>) => void;
+  onBlur?: (ev: React.FocusEvent<HTMLInputElement>) => void;
 }
 
 interface TextInputProps extends BaseInputProps {

@@ -1,14 +1,13 @@
 import { classNames } from "../shared/classNames";
 
-import styles from "./VintageCard.module.scss";
+import styles from "./Box.module.scss";
 
-export interface VintageBoxProps {
+export interface BoxProps {
   mode: "green" | "yellow" | "purple" | "blue" | "orange" | "simple" | "pink";
   children: React.ReactNode;
-  onClick: () => void;
 }
 
-export const VintageBox = ({ mode, children, ...props }: VintageBoxProps) => {
+export const Box = ({ mode, children, ...props }: BoxProps) => {
   const componentProps = {
     className: classNames(styles["card"], styles[`card--${mode}`]),
     ...props

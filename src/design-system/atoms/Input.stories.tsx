@@ -32,3 +32,9 @@ export const WithHiddenLabel = InputTemplate.bind({});
 WithHiddenLabel.args = {
   hideLabel: true
 };
+
+export const Simple = InputTemplate.bind({});
+Simple.args = {
+  hideLabel: true,
+  size: "simple"
+};

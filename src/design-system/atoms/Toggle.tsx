@@ -9,7 +9,12 @@ export interface ToggleProps {
   onChange: (ev: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const Toggle = ({ id, label, initialState = false, onChange }: ToggleProps) => {
+export const Toggle = ({
+  id,
+  label,
+  initialState = false,
+  onChange
+}: ToggleProps) => {
   const [checked, setChecked] = useState(initialState);
 
   function handleChange(ev: React.ChangeEvent<HTMLInputElement>) {
@@ -19,7 +24,14 @@ export const Toggle = ({ id, label, initialState = false, onChange }: ToggleProp
 
   return (
     <div>
-      <input className={styles.input} onChange={handleChange} id={id} name={id} type="checkbox" checked={checked} />
+      <input
+        className={styles.input}
+        onChange={handleChange}
+        id={id}
+        name={id}
+        type="checkbox"
+        checked={checked}
+      />
       <label htmlFor={id} className={styles.label}>
         <span className={styles.label__switch} />
         {label}

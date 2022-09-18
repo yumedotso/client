@@ -1,0 +1,24 @@
+@use "../settings/spacing";
+
+.linkrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    // auto resize input with text length
+    width: auto;
+    border: none;
+    margin: spacing.$xxs spacing.$xxs;
+    background: transparent;
+    outline: none;
+  }
+}
+
+.rowItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
