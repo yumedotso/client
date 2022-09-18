@@ -1,0 +1,62 @@
+@use "../settings/border";
+@use "../settings/colors";
+@use "../settings/spacing";
+@use "../settings/typography";
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: colors.$text-primary;
+  font: inherit;
+  font-weight: 500;
+  text-decoration: none;
+  border: 2px solid colors.$bg-darkTheme;
+  border-radius: border.$radius-default;
+
+  transition: all 0.2s;
+
+  &--large {
+    padding: spacing.$xs spacing.$lg;
+    font: typography.$b400-bold;
+  }
+
+  &--small {
+    padding: spacing.$tiny spacing.$xs;
+    font: typography.$b300-bold;
+  }
+
+  &--primary {
+    background: colors.$cta-primary;
+
+    &:hover {
+      background: colors.$cta-primary-hover;
+    }
+  }
+
+  &--secondary {
+    color: colors.$white;
+    background: colors.$cta-secondary;
+
+    &:hover {
+      background: colors.$cta-secondary-hover;
+    }
+  }
+
+  &--tertiary {
+    background: colors.$white;
+
+    &:hover {
+      background: colors.$white-hover;
+    }
+  }
+
+  &--vintage {
+    box-shadow: 5px 5px red;
+  }
+
+  &:disabled {
+    color: colors.$state-disabled;
+    background: colors.$state-disabled-bg;
+  }
+}
