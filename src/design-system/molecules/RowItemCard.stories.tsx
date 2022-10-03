@@ -14,7 +14,7 @@ export const Default = Template.bind({});
 Default.args = {
   mode: colors.yellow,
   id: "on-click-card",
-  url: "https://codely.tv",
+  url: "https://github.com/gagocarrilloedgar",
   initialState: false,
   initialValue: "This is the card title",
   onToggleChange: () => {}

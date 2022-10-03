@@ -11,7 +11,7 @@ const Template: Story<TextBoxProps> = (args) => <TextBox {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   id: "on-click-card",
-  url: "https://codely.tv",
+  url: "https://github.com/gagocarrilloedgar",
   initialValue: "This is the card title",
   showIconButton: true,
   size: "small",

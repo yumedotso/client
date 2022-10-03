@@ -10,7 +10,6 @@ export interface AvatarsProps {
 }
 
 export const Avatars = ({ avatars }: AvatarsProps) => {
-  ``;
   return (
     <span className={styles.avatars}>
       {avatars.map((avatar) => (

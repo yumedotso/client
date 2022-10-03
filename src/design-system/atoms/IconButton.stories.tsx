@@ -29,7 +29,7 @@ LightButton.args = {
 
 export const AsLink: Story<IconButtonProps> = () => (
   <IconButton
-    href="https://twitch.tv/codelytv"
+    href="https://github.com/gagocarrilloedgar"
     target="_blank"
     mode="dark"
     label="Síguenos en Twitch"
@@ -40,7 +40,7 @@ export const AsLink: Story<IconButtonProps> = () => (
 
 export const AsLinkSimple: Story<IconButtonProps> = () => (
   <IconButton
-    href="https://twitch.tv/codelytv"
+    href="https://github.com/gagocarrilloedgar"
     target="_blank"
     mode="simple"
     size="small"

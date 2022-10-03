@@ -5,31 +5,33 @@ import { Link, LinkProps } from "./Link";
 
 export default {
   title: "Atoms/Link",
-  component: Link,
+  component: Link
 } as Meta;
 
-const Template: Story<LinkProps> = (args) => <Link {...args} href="https://codely.tv" />;
+const Template: Story<LinkProps> = (args) => (
+  <Link {...args} href="https://github.com/gagocarrilloedgar" />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {
   mode: "primary",
-  children: "Link",
+  children: "Link"
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   mode: "secondary",
-  children: "Link",
+  children: "Link"
 };
 
 export const Tertiary = Template.bind({});
 Tertiary.args = {
   mode: "tertiary",
-  children: "Link",
+  children: "Link"
 };
 
 export const Inverted = Template.bind({});
 Inverted.args = {
   mode: "inverted",
-  children: "Link",
+  children: "Link"
 };

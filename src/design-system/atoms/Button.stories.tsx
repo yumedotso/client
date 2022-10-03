@@ -28,7 +28,7 @@ Tertiary.args = {
 };
 
 export const AsLink: Story<ButtonProps> = () => (
-  <Button href="https://codely.tv" target="_blank" mode="primary">
-    Conoce los cursos
+  <Button href="https://itsedgar.vercel.app" target="_blank" mode="primary">
+    Participa
   </Button>
 );
