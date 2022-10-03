@@ -11,7 +11,6 @@ module.exports = {
       }
     },
     '@storybook/addon-interactions',
-    '@storybook/addon-a11y',
     'storybook-addon-next-router'
   ],
   framework: '@storybook/react',
