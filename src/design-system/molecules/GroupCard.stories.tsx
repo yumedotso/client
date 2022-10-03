@@ -9,15 +9,15 @@ export default {
 
 const members = [
   {
-    alt: "Nino Dafonte",
-    src: "/avatar1.jpg"
+    alt: "Test 3",
+    src: "https://robohash.org/468355c6815fe2c112e0de6724ca5c0a?set=set3&bgset=&size=400x400"
   },
   {
-    alt: "Núria Soriano",
-    src: "/avatar2.jpg"
+    alt: "Test 2",
+    src: "https://robohash.org/468355c6815fe2c112e0de6724ca5c0a?set=set5&bgset=&size=400x400"
   },
   {
-    alt: "Javier Fernández",
+    alt: "Test 1",
     src: "https://robohash.org/468355c6815fe2c112e0de6724ca5c0a?set=set4&bgset=&size=400x400"
   }
 ];

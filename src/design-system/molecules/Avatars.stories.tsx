@@ -14,11 +14,11 @@ Default.args = {
   avatars: [
     {
       alt: "Nino Dafonte",
-      src: "/avatar1.jpg"
+      src: "https://robohash.org/468355c6815fe2c112e0de6724ca5c0a?set=set6&bgset=&size=400x400"
     },
     {
       alt: "Núria Soriano",
-      src: "/avatar2.jpg"
+      src: "https://robohash.org/468355c6815fe2c112e0de6724ca5c0a?set=set5&bgset=&size=400x400"
     },
     {
       alt: "Javier Fernández",
