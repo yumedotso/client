@@ -1,0 +1,20 @@
+{
+	"name": "Yume",
+	"short_name": "Yume",
+	"description": "Yume is a user-friendly platform that helps people store, organize, and share their wish lists with friends and family, allowing them to easily keep track of their desired items and receive thoughtful gifts on special occasions.",
+	"prefer_related_applications": true,
+	"icons": [
+		{
+			"src": "/dev/favicons/maskable_icon.png",
+			"sizes": "400x400",
+			"type": "image/png",
+			"purpose": "maskable any"
+		}
+	],
+	"theme_color": "#E6F1F9",
+	"background_color": "#E6F1F9",
+	"display": "standalone",
+	"start_url": "/",
+	"scope": "/",
+	"id": "/"
+}
