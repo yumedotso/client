@@ -1,18 +1,18 @@
-import { classNames } from "../shared/classNames";
+import { classNames } from '../shared/classNames'
 
-import { colors } from "../shared";
-import styles from "./Box.module.scss";
+import { colors } from '../shared'
+import styles from './Box.module.scss'
 
 export interface BoxProps {
-  mode: colors;
-  children: React.ReactNode;
+	mode: colors
+	children: React.ReactNode
 }
 
 export const Box = ({ mode, children, ...props }: BoxProps) => {
-  const componentProps = {
-    className: classNames(styles["card"], styles[`card--${mode}`]),
-    ...props
-  };
+	const componentProps = {
+		className: classNames(styles['card'], styles[`card--${mode}`]),
+		...props
+	}
 
-  return <div {...componentProps}>{children}</div>;
-};
+	return <div {...componentProps}>{children}</div>
+}

@@ -1,34 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Yume
 
-## Getting Started
+Yume is a user-friendly platform that helps people store, organize, and share their wish lists with friends and family, allowing them to easily keep track of their desired items and receive thoughtful gifts on special occasions.
 
-First, run the development server:
+## Mision, Vision & Values
 
-```bash
-npm run dev
-# or
-yarn dev
+### Mission 
+To help people achieve their dreams by providing an easy and fun way to create and share wish lists with loved ones.
+
+### Vision
+To become the go-to platform for creating and sharing wish lists, inspiring people to dream big and connect with those who matter most.
+
+### Values
+
+- **Empowerment**: We believe in empowering people to pursue their dreams and share them with others.
+- **Simplicity**: We strive for simplicity in everything we do, making it easy for people to use our platform and achieve their goals.
+- **Creativity**: We encourage creativity and imagination, inspiring people to dream big and think outside the box.
+- **Community**: We value the importance of community and connection, fostering meaningful relationships and helping people share their dreams with loved ones.
+
+## Getting started 
+
+```sh
+git clone https://github.com/gagocarrillo/yume
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
