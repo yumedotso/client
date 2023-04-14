@@ -1,0 +1,21 @@
+import { Avatar } from '../atoms/Avatar'
+import { Lead } from '../atoms/Lead'
+import styles from './ProfileAvatar.module.scss'
+
+export interface ProfileAvatarProps {
+	name: string
+	src: string
+	tagline: string
+}
+
+export const ProfileAvatar = ({ name, src, tagline }: ProfileAvatarProps) => {
+	return (
+		<div className={styles.container}>
+			<Avatar src={src} alt={name} />
+			<section className={styles.textProfile}>
+				<Lead bold>{name}</Lead>
+				<p className={styles.typography}>{tagline}</p>
+			</section>
+		</div>
+	)
+}

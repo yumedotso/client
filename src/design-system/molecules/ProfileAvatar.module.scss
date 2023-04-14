@@ -1,0 +1,20 @@
+@use '../settings/spacing';
+@use '../settings/colors';
+@use '../settings/typography';
+
+/** Center everything in the container, center also the text */
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.textProfile {
+	margin-top: spacing.$xs
+}
+
+.typography {
+	font: typography.$b100-regular;
+}

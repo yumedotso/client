@@ -1,5 +1,5 @@
-$font-family: "Roboto", sans-serif;
-$font-family-mono: "Roboto Mono", monospace;
+$font-family: 'Roboto', sans-serif;
+$font-family-mono: 'Roboto Mono', monospace;
 
 // Body sizes
 $b500-bold: 700 1.31rem / 1.33 #{$font-family};
@@ -10,6 +10,8 @@ $b300-bold: 700 1rem / 1.5 #{$font-family};
 $b300-regular: 1rem / 1.5 #{$font-family};
 $b200-bold: 700 0.875rem / 1.42 #{$font-family};
 $b200-regular: 0.875rem / 1.42 #{$font-family};
+$b100-bold: 700 0.85rem / 1.33 #{$font-family};
+$b100-regular: 0.85rem / 1.33 #{$font-family};
 
 // Desktop title sizes
 $xl-h500-regular: 5rem / 1.05 #{$font-family};
