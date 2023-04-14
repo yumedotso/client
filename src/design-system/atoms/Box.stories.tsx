@@ -1,7 +1,7 @@
 import { Meta, Story } from "@storybook/react";
-import React from "react";
 
-import { BoxProps, Box } from "./Box";
+import { colors } from "../shared";
+import { Box, BoxProps } from "./Box";
 
 export default {
   title: "Atoms/Box",
@@ -9,33 +9,30 @@ export default {
 } as Meta;
 
 const Template: Story<BoxProps> = (args) => (
-  <Box {...args}>
-    <h3>Box title</h3>
-    <p>Box description</p>
-  </Box>
+  <Box {...args}>This is an empty box</Box>
 );
 
 export const Default = Template.bind({});
 Default.args = {
-  mode: "yellow"
+  mode: colors.yellow
 };
 
 export const Green = Template.bind({});
 Green.args = {
-  mode: "green"
+  mode: colors.green
 };
 
 export const Pink = Template.bind({});
 Pink.args = {
-  mode: "pink"
+  mode: colors.pink
 };
 
 export const Purple = Template.bind({});
 Purple.args = {
-  mode: "purple"
+  mode: colors.purple
 };
 
 export const Orange = Template.bind({});
 Orange.args = {
-  mode: "orange"
+  mode: colors.purple
 };

@@ -1,9 +1,10 @@
 import { classNames } from "../shared/classNames";
 
+import { colors } from "../shared";
 import styles from "./Box.module.scss";
 
 export interface BoxProps {
-  mode: "green" | "yellow" | "purple" | "blue" | "orange" | "simple" | "pink";
+  mode: colors;
   children: React.ReactNode;
 }
 
