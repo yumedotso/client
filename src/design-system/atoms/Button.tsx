@@ -6,7 +6,7 @@ import { classNames } from '../shared/classNames'
 import styles from './Button.module.scss'
 
 type HtmlButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-	href: undefined
+	href?: string
 }
 
 type AnchorProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {

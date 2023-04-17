@@ -2,7 +2,11 @@ import React from 'react'
 import { IconButton } from '../atoms/IconButton'
 import { SendICon } from '../atoms/SendIcon'
 
-export const ShareButton = (props: { url: string }) => {
+export interface ShareButtonProps {
+	url: string
+}
+
+export const ShareButton = (props: ShareButtonProps) => {
 	const { url } = props
 	const { isCopied, copyToClipboard } = useCopyToClipboard()
 

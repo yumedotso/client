@@ -1,0 +1,6 @@
+@use '../../design-system/settings/spacing';
+
+.layout {
+	margin-top: spacing.$lg;
+	min-height: calc(100vh - spacing.$section - spacing.$lg);
+}
