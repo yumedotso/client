@@ -1,0 +1,18 @@
+@use '../../design-system/settings/sizes';
+@use '../../design-system/settings/typography';
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font: typography.$b100-regular;
+
+	@media (min-width: sizes.$tablet) {
+		justify-content: center;
+	}
+
+	@media (min-width: sizes.$desktop) {
+		justify-content: space-between;
+	}
+}
