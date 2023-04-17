@@ -8,6 +8,7 @@
     <ul>
       <summary>
       <h1 style="display: inline-block;">Yume</h1>
+      <br/>
       <h3 style="display: inline-block;">The AI-powered social wish-list platform</h3>
       </summary>
     </ul>
