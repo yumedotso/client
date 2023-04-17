@@ -18,3 +18,13 @@ export const SettingsNav = () => {
 		</NavbarContainer>
 	)
 }
+
+export const PublicNav = () => {
+	return (
+		<NavbarContainer>
+			<Button href="/settings" mode="tertiary" size="small">
+				Connect
+			</Button>
+		</NavbarContainer>
+	)
+}

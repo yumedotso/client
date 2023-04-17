@@ -18,12 +18,12 @@
 
   &--large {
     padding: spacing.$xs spacing.$lg;
-    font: typography.$b400-bold;
+    font: typography.$b400-regular;
   }
 
   &--small {
     padding: spacing.$tiny spacing.$xs;
-    font: typography.$b300-bold;
+    font: typography.$b300-regular;
   }
 
   &--primary {

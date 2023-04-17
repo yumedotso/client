@@ -1,53 +1,53 @@
-@use "../settings/colors";
+@use '../settings/colors';
 
 .icon-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: var(--size);
-  height: var(--size);
-  font-family: inherit;
-  border: none;
-  border-radius: 50%;
-  transition: all 0.2s;
-  border: 1px solid colors.$bg-darkTheme;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--size);
+	height: var(--size);
+	font-family: inherit;
+	border-radius: 50%;
+	transition: all 0.2s;
+	border: 1px solid colors.$bg-darkTheme;
 
-  &--small {
-    --size: 1.5rem;
-  }
+	&--small {
+		padding: 0.1rem;
+		--size: 1.5rem;
+	}
 
-  &--medium {
-    --size: 3.5rem;
-  }
+	&--medium {
+		--size: 3.5rem;
+	}
 
-  &--large {
-    --size: 4.75rem;
-  }
+	&--large {
+		--size: 4.75rem;
+	}
 
-  &--light {
-    color: colors.$text-primary;
-    background: colors.$white;
+	&--light {
+		color: colors.$text-primary;
+		background: colors.$white;
 
-    &:hover {
-      background: colors.$bg;
-    }
-  }
+		&:hover {
+			background: colors.$bg;
+		}
+	}
 
-  &--dark {
-    color: colors.$white;
-    background: colors.$cta-primary;
+	&--dark {
+		color: colors.$white;
+		background: colors.$cta-primary;
 
-    &:hover {
-      background: colors.$cta-primary-hover;
-    }
-  }
+		&:hover {
+			background: colors.$cta-primary-hover;
+		}
+	}
 
-  &--simple {
-    color: colors.$text-primary;
-    background: colors.$white;
-    border: none;
-    &:hover {
-      background: colors.$bg;
-    }
-  }
+	&--simple {
+		color: colors.$text-primary;
+		background: colors.$white;
+		border: none;
+		&:hover {
+			background: colors.$bg;
+		}
+	}
 }

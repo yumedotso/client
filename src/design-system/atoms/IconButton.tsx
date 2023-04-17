@@ -1,63 +1,46 @@
-import NextLink from "next/link";
-import React from "react";
+import NextLink from 'next/link'
+import React from 'react'
 
-import { classNames } from "../shared/classNames";
+import { classNames } from '../shared/classNames'
 
-import styles from "./IconButton.module.scss";
+import styles from './IconButton.module.scss'
 
-type HtmlButtonProps = Omit<
-  React.ButtonHTMLAttributes<HTMLButtonElement>,
-  "children"
-> & {
-  href?: undefined;
-};
+type HtmlButtonProps = Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'children'> & {
+	href?: string
+}
 
-type AnchorProps = Omit<
-  React.AnchorHTMLAttributes<HTMLAnchorElement>,
-  "children"
-> & {
-  href: string;
-};
+type AnchorProps = Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'children'> & {
+	href: string
+}
 
 export interface IconButtonProps {
-  mode?: "light" | "dark" | "simple";
-  size?: "large" | "medium" | "small";
-  label: string;
-  children: React.ReactNode;
+	mode?: 'light' | 'dark' | 'simple'
+	size?: 'large' | 'medium' | 'small'
+	label: string
+	children: React.ReactNode
 }
 
 interface Overload {
-  (props: HtmlButtonProps & IconButtonProps): JSX.Element;
-  (props: AnchorProps & IconButtonProps): JSX.Element;
+	(props: HtmlButtonProps & IconButtonProps): JSX.Element
+	(props: AnchorProps & IconButtonProps): JSX.Element
 }
 
-const hasHref = (props: HtmlButtonProps | AnchorProps): props is AnchorProps =>
-  "href" in props;
+const hasHref = (props: HtmlButtonProps | AnchorProps): props is AnchorProps => 'href' in props
 
-export const IconButton: Overload = ({
-  mode = "light",
-  size = "medium",
-  label,
-  children,
-  ...props
-}) => {
-  const componentProps = {
-    className: classNames(
-      styles["icon-btn"],
-      styles[`icon-btn--${mode}`],
-      styles[`icon-btn--${size}`]
-    ),
-    "aria-label": label,
-    ...props
-  };
+export const IconButton: Overload = ({ mode = 'light', size = 'medium', label, children, ...props }) => {
+	const componentProps = {
+		className: classNames(styles['icon-btn'], styles[`icon-btn--${mode}`], styles[`icon-btn--${size}`]),
+		'aria-label': label,
+		...props
+	}
 
-  if (hasHref(componentProps)) {
-    return (
-      <NextLink href={componentProps.href}>
-        <a {...componentProps}>{children}</a>
-      </NextLink>
-    );
-  }
+	if (hasHref(componentProps)) {
+		return (
+			<NextLink href={componentProps.href}>
+				<a {...componentProps}>{children}</a>
+			</NextLink>
+		)
+	}
 
-  return <button {...componentProps}>{children}</button>;
-};
+	return <button {...componentProps}>{children}</button>
+}
