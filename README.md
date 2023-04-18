@@ -270,4 +270,4 @@ Default.args = {}
 
 ## License
 
-[MIT](/LICENSE.md)
+[MIT](/LICENSE)
