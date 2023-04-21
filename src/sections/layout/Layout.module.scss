@@ -1,6 +1,13 @@
 @use '../../design-system/settings/spacing';
 
 .layout {
-	margin-top: spacing.$lg;
-	min-height: calc(100vh - spacing.$section - spacing.$lg);
+	display: flex;
+	flex-direction: column;
+	padding: spacing.$xs;
+
+	// Only first  div is a child of .layout
+	div {
+		margin-top: spacing.$md;
+		min-height: calc(100vh - 2 * spacing.$xl - 2 * spacing.$xs);
+	}
 }

@@ -6,10 +6,10 @@ import styles from './Layout.module.scss'
 
 export const Layout = ({ children }: React.PropsWithChildren) => {
 	return (
-		<main>
+		<main className={styles.layout}>
 			<NavBar />
 			<ErrorBoundary>
-				<div className={styles.layout}>{children}</div>
+				<div>{children}</div>
 			</ErrorBoundary>
 			<Footer />
 		</main>
