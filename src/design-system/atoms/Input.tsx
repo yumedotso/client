@@ -19,7 +19,6 @@ interface BaseInputProps {
 	placeholder?: string
 	value?: string | number
 	size?: 'small' | 'medium' | 'simple'
-	fullWidth?: boolean
 	required?: boolean
 	ref?: React.RefObject<HTMLInputElement>
 	onChange?: (ev: React.ChangeEvent<HTMLInputElement>) => void
@@ -53,8 +52,6 @@ export const Input = ({
 	...props
 }: InputProps) => {
 	const [internalvalue, setInternalValue] = useState(value)
-
-	const isFullWidth = props.fullWidth
 
 	useEffect(() => {
 		setInternalValue(value)
