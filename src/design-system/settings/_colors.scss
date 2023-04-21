@@ -1,4 +1,5 @@
 $_primary-green: #b2e1bb;
+$_primary-green-action: #16be35;
 $_primary-blue: #6c90d5;
 $_primary-gray: #787676;
 $_primary-grayLight: #b1b1b1;
@@ -31,6 +32,7 @@ $text-primary: $_primary-black;
 $text-secondary: $_primary-gray;
 $text-secondary-darkTheme: $_primary-grayLight;
 $text-tertiary: $_secondary-violet;
+$link: $_primary-green-action;
 
 $product-alt1: $_primary-green;
 $product-alt2: $_secondary-violet;

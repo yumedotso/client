@@ -1,37 +1,38 @@
-@use "../settings/colors";
+@use '../settings/colors';
+@use '../settings/typography';
 
 .link {
-  font-weight: 700;
-  text-decoration: none;
+	text-decoration: none;
+	font: typography.$b200-bold;
 
-  &:hover {
-    color: colors.$state-active;
-    text-decoration: none;
-  }
+	&:hover {
+		color: colors.$state-active;
+		text-decoration: none;
+	}
 
-  &:disabled {
-    color: colors.$state-disabled;
-  }
+	&:disabled {
+		color: colors.$state-disabled;
+	}
 
-  &--primary {
-    color: colors.$text-primary;
-    text-decoration: underline;
+	&--primary {
+		color: colors.$link;
+		text-decoration: underline;
 
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 
-  &--secondary {
-    color: colors.$text-primary;
-  }
+	&--secondary {
+		color: colors.$link;
+	}
 
-  &--tertiary {
-    color: colors.$text-tertiary;
-  }
+	&--tertiary {
+		color: colors.$text-tertiary;
+	}
 
-  &--inverted {
-    color: colors.$white;
-    text-decoration: underline;
-  }
+	&--inverted {
+		color: colors.$white;
+		text-decoration: underline;
+	}
 }

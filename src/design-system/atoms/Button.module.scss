@@ -8,7 +8,6 @@
 	align-items: center;
 	justify-content: center;
 	color: colors.$text-primary;
-	font: inherit;
 	font-weight: 500;
 	text-decoration: none;
 	border: 2px solid colors.$bg-darkTheme;
@@ -23,7 +22,7 @@
 
 	&--small {
 		padding: spacing.$xxxs spacing.$md;
-		font: typography.$b300-regular;
+		font: typography.$b200-regular;
 	}
 
 	&--primary {
@@ -35,7 +34,6 @@
 	}
 
 	&--secondary {
-		color: colors.$white;
 		background: colors.$cta-secondary;
 
 		&:hover {

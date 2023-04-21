@@ -1,42 +1,43 @@
-@use "../settings/border";
-@use "../settings/colors";
-@use "../settings/spacing";
-@use "../settings/typography";
+@use '../settings/border';
+@use '../settings/colors';
+@use '../settings/spacing';
+@use '../settings/typography';
 
 .input {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: spacing.$tiny spacing.$xxs;
-  font: typography.$b400-regular;
-  background: colors.$white;
-  border: 1px solid colors.$input-border;
-  border-radius: border.$radius-default;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	font: typography.$b200-regular;
+	padding: spacing.$tiny spacing.$xxs;
+	margin: spacing.$xxs 0;
+	background: colors.$white;
+	border: 1px solid colors.$input-border;
+	border-radius: border.$radius-default;
 
-  &--small {
-    padding: spacing.$tiny spacing.$xxs;
-  }
+	&--small {
+		padding: spacing.$tiny spacing.$xxs;
+	}
 
-  &--medium {
-    height: 3.75rem;
-    padding: spacing.$xxs spacing.$sm;
-  }
+	&--medium {
+		height: 3.75rem;
+		padding: spacing.$xxs spacing.$sm;
+	}
 
-  &--simple {
-    border: none;
+	&--simple {
+		border: none;
 
-    &:focus {
-      outline: none;
-    }
-  }
+		&:focus {
+			outline: none;
+		}
+	}
 
-  &[type="number"] {
-    appearance: textfield;
+	&[type='number'] {
+		appearance: textfield;
 
-    &::-webkit-outer-spin-button,
-    &::-webkit-inner-spin-button {
-      margin: 0;
-      appearance: none;
-    }
-  }
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			margin: 0;
+			appearance: none;
+		}
+	}
 }
