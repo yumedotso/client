@@ -1,4 +1,3 @@
-
 import { NotFound } from '../sections/layout/Errors'
 
 const PageNotFound = () => {

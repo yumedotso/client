@@ -1,0 +1,35 @@
+@use '../settings/colors';
+@use '../settings/typography';
+
+// Generate a global typography class for each font size (h1, h2, h3, h4, h5, h6, p, small)
+// and a global typography class for each font weight (bold, normal, light)
+
+.typography {
+	&--h1 {
+		font: typography.$xl-h500-regular;
+	}
+
+	&--h2 {
+		font: typography.$xl-h400-regular;
+	}
+
+	&--h3 {
+		font: typography.$xl-h300-regular;
+	}
+
+	&--h4 {
+		font: typography.$xl-h200-regular;
+	}
+
+	&--h5 {
+		font: typography.$xl-h100-regular;
+	}
+
+	&--h6 {
+		font: typography.$b500-regular;
+	}
+
+	&--p {
+		font: typography.$b200-regular;
+	}
+}
