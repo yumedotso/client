@@ -37,14 +37,17 @@ export const LoginPage = () => {
 						Login
 					</Button>
 				</form>
-				<section className="auth__links" style={{ marginTop: '1rem', display: 'inline-flex' }}>
+				<section className="auth-links" style={{ marginTop: '0.5rem', display: 'inline-flex' }}>
 					<Typography> Not a user?</Typography>{' '}
 					<Link href="/register" mode="secondary">
 						Sign up here
 					</Link>
 				</section>
-				<section className="auth__links">
-					Forgot password? <a href="/reset-password">Reset password</a>
+				<section className="auth-links" style={{ marginTop: '0.5rem', display: 'inline-flex' }}>
+					<Typography> Forgot password?</Typography>{' '}
+					<Link href="/reset-password" mode="secondary">
+						Reset password
+					</Link>
 				</section>
 			</Box>
 		</div>
