@@ -5,10 +5,11 @@ import { Lead } from '../../design-system/atoms/Lead'
 import { Link } from '../../design-system/atoms/Link'
 import { Typography } from '../../design-system/atoms/Typography'
 import { colors } from '../../design-system/shared'
+import { EmptyLayout } from '../layout/EmptyLayout'
 
 export const LoginPage = () => {
 	return (
-		<div>
+		<EmptyLayout>
 			<Box mode={colors.pink}>
 				<Lead bold>Nice to see you again 😎</Lead>
 				<Typography type="p">Login to your account</Typography>
@@ -50,6 +51,6 @@ export const LoginPage = () => {
 					</Link>
 				</section>
 			</Box>
-		</div>
+		</EmptyLayout>
 	)
 }

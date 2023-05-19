@@ -3,15 +3,12 @@
 .layout {
 	display: flex;
 	flex-direction: column;
-	padding: spacing.$xs;
+	min-height: 100vh;
 
-	// Only first  div is a child of .layout
-	div {
+	.body {
 		flex: 1;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-top: spacing.$md;
-		min-height: calc(100vh - 2 * spacing.$xl - 2 * spacing.$xs);
 	}
 }
