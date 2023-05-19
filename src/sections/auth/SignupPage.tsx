@@ -7,14 +7,14 @@ import { Typography } from '../../design-system/atoms/Typography'
 import { colors } from '../../design-system/shared'
 import { EmptyLayout } from '../layout/EmptyLayout'
 
-import styles from './LoginPage.module.scss'
+import styles from './SignupPage.module.scss'
 
-export const LoginPage = () => {
+export const SignupPage = () => {
 	return (
 		<EmptyLayout>
-			<Box mode={colors.pink}>
-				<Lead bold>Nice to see you again 😎</Lead>
-				<Typography type="p">Login to your account</Typography>
+			<Box mode={colors.orange}>
+				<Lead bold>Welcome to yume 🥳</Lead>
+				<Typography type="p">Useful & meaninfull gifts without sweat</Typography>
 				<form className={styles['login-form']}>
 					<Input
 						label="Name"
@@ -40,15 +40,9 @@ export const LoginPage = () => {
 					</Button>
 				</form>
 				<section className="auth-links" style={{ marginTop: '0.5rem', display: 'inline-flex' }}>
-					<Typography> Not a user?</Typography>{' '}
-					<Link href="/register" mode="secondary">
-						Sign up here
-					</Link>
-				</section>
-				<section className="reset-links" style={{ marginTop: '0.5rem', display: 'inline-flex' }}>
-					<Typography> Forgot password?</Typography>{' '}
-					<Link href="/reset-password" mode="secondary">
-						Reset password
+					<Typography> Already a user?</Typography>{' '}
+					<Link href="/login" mode="secondary">
+						Sign in here
 					</Link>
 				</section>
 			</Box>

@@ -7,7 +7,6 @@ export interface BoxProps {
 	mode: colors
 	children: React.ReactNode
 	style?: React.CSSProperties
-	className?: string
 }
 
 export const Box = ({ mode, children, ...props }: BoxProps) => {
