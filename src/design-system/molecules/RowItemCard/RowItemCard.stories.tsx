@@ -1,5 +1,5 @@
 import { Meta, Story } from "@storybook/react";
-import { colors } from "../shared";
+import { colors } from "../../shared";
 
 import { RowItemCard, RowItemCardProps } from "./RowItemCard";
 

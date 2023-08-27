@@ -59,7 +59,7 @@ export const Input = ({
 
 	function handleChange(ev: React.ChangeEvent<HTMLInputElement>) {
 		setInternalValue(ev.target.value)
-		onChange && onChange(ev)
+		onChange?.(ev)
 	}
 
 	return (
