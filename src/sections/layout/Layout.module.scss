@@ -4,14 +4,15 @@
 	display: flex;
 	flex-direction: column;
 	padding: spacing.$xs;
+	min-height: 100vh; /* Ensure the container takes up at least the height of the viewport */
 
 	// Only first  div is a child of .layout
 	div {
 		flex: 1;
 		display: flex;
-		align-items: center;
 		justify-content: center;
-		margin-top: spacing.$md;
-		min-height: calc(100vh - 2 * spacing.$xl - 2 * spacing.$xs);
+		align-items: flex-start;
+		width: 100%;
+		padding: 5px;
 	}
 }

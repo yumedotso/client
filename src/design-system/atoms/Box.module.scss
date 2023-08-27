@@ -13,6 +13,7 @@
 	padding: spacing.$xs spacing.$xs;
 	align-items: center;
 	justify-content: center;
+	background-color: colors.$white;
 
 	&--yellow {
 		box-shadow: 10px 10px colors.$product-alt3, 10px 10px 0 2px colors.$bg-darkTheme;

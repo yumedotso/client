@@ -1,11 +1,8 @@
 import type { NextPage } from 'next'
+import { PublicPage } from '../sections/public'
 
 const Home: NextPage = () => {
-	return (
-		<>
-			<h1>Hello World</h1>
-		</>
-	)
+	return <PublicPage />
 }
 
 export default Home

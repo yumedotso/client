@@ -1,30 +1,31 @@
-import { Meta, Story } from "@storybook/react";
-import { colors } from "../../shared";
+import { Meta, Story } from '@storybook/react'
+import { colors } from '../../shared'
 
-import { RowItemCard, RowItemCardProps } from "./RowItemCard";
+import { RowItemCard, RowItemCardProps } from './RowItemCard'
 
 export default {
-  title: "Molecules/RowItemCard",
-  component: RowItemCard
-} as Meta;
+	title: 'Molecules/RowItemCard',
+	component: RowItemCard
+} as Meta
 
-const Template: Story<RowItemCardProps> = (args) => <RowItemCard {...args} />;
+const Template: Story<RowItemCardProps> = (args) => <RowItemCard {...args} />
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
-  mode: colors.yellow,
-  id: "on-click-card",
-  url: "https://github.com/gagocarrilloedgar",
-  initialState: false,
-  initialValue: "This is the card title",
-  onToggleChange: () => {}
-};
+	mode: colors.yellow,
+	id: 'on-click-card',
+	url: 'https://github.com/gagocarrilloedgar',
+	initialState: false,
+	initialValue: 'This is the card title',
+	onToggleChange: () => {}
+}
 
-export const Edit = Template.bind({});
+export const Edit = Template.bind({})
 Edit.args = {
-  mode: colors.yellow,
-  id: "edit-card",
-  initialValue: "RowItemCard title",
-  initialState: false,
-  onToggleChange: () => {}
-};
+	mode: colors.yellow,
+	id: 'edit-card',
+	initialValue: 'RowItemCard title',
+	initialState: false,
+	dragable: true,
+	onToggleChange: () => {}
+}

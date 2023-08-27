@@ -36,7 +36,7 @@ export interface TextBoxProps extends React.HTMLAttributes<HTMLSpanElement> {
 	 * width of the
 	 */
 	style?: React.CSSProperties
-	onInputChange: (ev: React.ChangeEvent<HTMLSpanElement>) => void
+	onInputChange: (ev: React.ChangeEvent<HTMLInputElement>) => void
 }
 
 export const TextBox = ({
@@ -79,7 +79,7 @@ export const TextBox = ({
 		}
 	}, [focused])
 
-	const handleInputChange = (ev: React.ChangeEvent<HTMLSpanElement>) => {
+	const handleInputChange = (ev: React.ChangeEvent<HTMLInputElement>) => {
 		onInputChange?.(ev)
 	}
 

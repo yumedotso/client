@@ -11,7 +11,9 @@ export interface ProfileAvatarProps {
 export const ProfileAvatar = ({ name, src, tagline }: ProfileAvatarProps) => {
 	return (
 		<div className={styles.container}>
-			<Avatar src={src} alt={name} />
+			<span>
+				<Avatar src={src} alt={name} />
+			</span>
 			<section className={styles.textProfile}>
 				<Lead bold>{name}</Lead>
 				<p className={styles.typography}>{tagline}</p>

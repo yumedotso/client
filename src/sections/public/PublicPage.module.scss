@@ -1,0 +1,11 @@
+.section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	@media (min-width: 1024px) {
+		max-width: 70%; // Adjust the maximum width for laptops as needed
+		margin: 0 auto; // Center align the section horizontally on laptops
+	}
+}

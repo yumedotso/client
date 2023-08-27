@@ -35,7 +35,9 @@ export interface RowItemCardProps {
 	 * @default undefined
 	 */
 	url?: string
+	dragable?: boolean
 	onToggleChange: (ev: React.ChangeEvent<HTMLInputElement>) => void
+	onChange: (ev: React.ChangeEvent<HTMLInputElement>) => void
 }
 
 export const RowItemCard = ({
@@ -44,7 +46,9 @@ export const RowItemCard = ({
 	url,
 	initialState = false,
 	initialValue = 'This is the card title',
-	onToggleChange
+	dragable = false,
+	onToggleChange,
+	onChange
 }: RowItemCardProps) => {
 	const [showIcon, setShowIcon] = React.useState(false)
 
@@ -52,14 +56,18 @@ export const RowItemCard = ({
 		onToggleChange?.(ev)
 	}
 
-	const handleInputChange = (ev: React.ChangeEvent<HTMLSpanElement>) => {
-		console.log(ev.target.innerText)
+	const handleInputChange = (ev: React.ChangeEvent<HTMLInputElement>) => {
+		onChange?.(ev)
 	}
 
 	return (
 		<Box mode={colors[mode]}>
-			<div className={classNames(styles['rowItem'])}>
-				{showIcon ? <GrDrag size="18" /> : null}
+			<div
+				className={classNames(styles['rowItem'])}
+				onMouseEnter={() => setShowIcon(true)}
+				onMouseLeave={() => setShowIcon(false)}
+			>
+				{showIcon && dragable && <GrDrag style={{ alignSelf: 'center' }} size="18" />}
 				<TextBox
 					size="small"
 					id={`${id}-text-box`}
@@ -68,8 +76,6 @@ export const RowItemCard = ({
 					value={initialValue}
 					style={{ width: '95%' }}
 					onInputChange={handleInputChange}
-					onMouseEnter={() => setShowIcon(true)}
-					onMouseLeave={() => setShowIcon(false)}
 				/>
 				<Toggle label={''} id={id} onChange={handleToggleChange} initialState={initialState} />
 			</div>

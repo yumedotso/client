@@ -7,12 +7,13 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	max-width: fit-content;
 	text-align: center;
+	align-items: center;
 }
 
 .textProfile {
-	margin-top: spacing.$xs
+	margin-top: spacing.$xs;
 }
 
 .typography {

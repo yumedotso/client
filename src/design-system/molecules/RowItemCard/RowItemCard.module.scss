@@ -3,7 +3,6 @@
 .rowItem {
 	display: flex;
 	flex-direction: row;
-	width: 100%;
-	justify-content: space-between;
+	height: min-content;
 	align-items: center;
 }
